@@ -1,18 +1,33 @@
-﻿# STEP_CLASS
+# Week 1 Assignment — 5 Problems
 
-This repository contains solutions for the **STEP SEM-3** assignments and live-coding sessions.
-Each assignment/live-coding session is maintained in its dedicated Git branch.
+This branch contains clean, fully-tested Java implementations for the Week 1 Assignment problems:
 
-## Branch Overview
+1. **The Exam Hall Seat Duplication Checker (`ExamSeatDuplicationChecker.java`)**
+   - Method: `void checkDuplicateSeats(int[] seatNumbers)`
+   - Pure nested loop and array-based duplicate detection without any Collections framework.
 
-| Branch | Description | Problems Covered |
-| :--- | :--- | :--- |
-| **`day-1-live-coding`** | Day 1 Live-Coding Session | Rock-Paper-Scissors, Palindrome Checker, BMI Calculator, First Non-Repeating Character, Reverse Customer Name |
-| **`week-1-assignment`** | Week 1 Assignment | Exam Hall Seat Duplication, Typing Speed Accuracy, Traffic Signal Streak, Warehouse Inventory Balancer, Movie Review Word Length Profiler |
-| **`day-2-live-coding`** | Day 2 Live-Coding Session | Vowel & Consonant Counter, CSV Student Record Parser, File Extension Validator, Masked Phone Number Formatter, Bank Transaction Reference Generator & Validator |
-| **`week-2-assignment`** | Week 2 Assignment | ATM PIN Validator, Word Reversal Encoder, Product Inventory CSV Parser, Library ISBN Normalizer & Validator, Stop-Word-Filtered Frequency Report |
-| **`week-3-category-a`** | Week 3 OOP Homework (Category A) | Library Fine System, Extending Employee Without Touching It, Object References & Null Safety, Instance vs Static Boundary, Capstone HR + Parking Mini-System |
+2. **The Typing Speed Test Accuracy Checker (`TypingAccuracyChecker.java`)**
+   - Method: `void checkTypingAccuracy(String original, String typed)`
+   - Position-by-position character comparison, matching percentage calculation, and first-mismatch indexing.
 
----
-## Requirements
-- Java Development Kit (JDK 17 or higher)
+3. **The Traffic Signal Streak Analyzer (`TrafficSignalStreakAnalyzer.java`)**
+   - Method: `void findLongestStreak(String signalLog)`
+   - Single-pass scanning to track consecutive repeating signal colors and detect the maximum streak.
+
+4. **The Warehouse Inventory Balancer (`WarehouseInventoryBalancer.java`)**
+   - Method: `void analyzeInventory(int[] sectionA, int[] sectionB)`
+   - Computes section totals, compares balance status, and identifies the maximum quantity item across sections.
+
+5. **The Movie Review Word Length Profiler (`MovieReviewWordLengthProfiler.java`)**
+   - Method: `void classifyWordLengths(String review)`
+   - Splits review text into words and buckets them into Short (1–4), Medium (5–8), and Long (9+) words.
+
+## Compilation & Execution
+```bash
+javac src/*.java
+java -cp src ExamSeatDuplicationChecker
+java -cp src TypingAccuracyChecker
+java -cp src TrafficSignalStreakAnalyzer
+java -cp src WarehouseInventoryBalancer
+java -cp src MovieReviewWordLengthProfiler
+```
