@@ -1,18 +1,35 @@
-﻿# STEP_CLASS
+# Week 2 Assignment — 5 Problems
 
-This repository contains solutions for the **STEP SEM-3** assignments and live-coding sessions.
-Each assignment/live-coding session is maintained in its dedicated Git branch.
+This branch contains clean, fully-tested Java implementations for the Week 2 Assignment problems:
 
-## Branch Overview
+1. **ATM PIN Length Validator (`AtmPinValidator.java`)**
+   - Method: `void checkPinLength(String pin)`
+   - Basic length validation using `length()` and conditional check without loops.
 
-| Branch | Description | Problems Covered |
-| :--- | :--- | :--- |
-| **`day-1-live-coding`** | Day 1 Live-Coding Session | Rock-Paper-Scissors, Palindrome Checker, BMI Calculator, First Non-Repeating Character, Reverse Customer Name |
-| **`week-1-assignment`** | Week 1 Assignment | Exam Hall Seat Duplication, Typing Speed Accuracy, Traffic Signal Streak, Warehouse Inventory Balancer, Movie Review Word Length Profiler |
-| **`day-2-live-coding`** | Day 2 Live-Coding Session | Vowel & Consonant Counter, CSV Student Record Parser, File Extension Validator, Masked Phone Number Formatter, Bank Transaction Reference Generator & Validator |
-| **`week-2-assignment`** | Week 2 Assignment | ATM PIN Validator, Word Reversal Encoder, Product Inventory CSV Parser, Library ISBN Normalizer & Validator, Stop-Word-Filtered Frequency Report |
-| **`week-3-category-a`** | Week 3 OOP Homework (Category A) | Library Fine System, Extending Employee Without Touching It, Object References & Null Safety, Instance vs Static Boundary, Capstone HR + Parking Mini-System |
+2. **Word Reversal Encoder (`WordReversalEncoder.java`)**
+   - Method: `String reverseEachWord(String sentence)`
+   - Splits sentence using `split(" ")`, reverses each individual word with `StringBuilder`, and rejoins.
 
----
-## Requirements
-- Java Development Kit (JDK 17 or higher)
+3. **Product Inventory CSV Parser (`ProductInventoryCsvParser.java`)**
+   - Method: `void parseInventoryRecord(String csvLine)`
+   - Parses CSV strings using `split(",")`, validates token count, and formats output.
+
+4. **Library ISBN Normalizer & Validator (`LibraryIsbnValidator.java`)**
+   - Methods:
+     - `String normalizeCode(String raw)`
+     - `String validateAndFormat(String code)`
+   - Normalizes input with `trim()` and `substring()`, validates using `Character.isLetter()` / `isDigit()` without regex, and generates formatted ISBN records.
+
+5. **Stop-Word-Filtered Word Frequency Report (`StopWordFrequencyReport.java`)**
+   - Method: `void printFilteredWordFrequency(String feedback)`
+   - Cleans text using `replace()`, splits by whitespace, filters out standard stop words, and tallies frequency sorted in descending order.
+
+## Compilation & Execution
+```bash
+javac src/*.java
+java -cp src AtmPinValidator
+java -cp src WordReversalEncoder
+java -cp src ProductInventoryCsvParser
+java -cp src LibraryIsbnValidator
+java -cp src StopWordFrequencyReport
+```
