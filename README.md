@@ -1,18 +1,35 @@
-﻿# STEP_CLASS
+# Day 2 Live-Coding Session — 5 Problems
 
-This repository contains solutions for the **STEP SEM-3** assignments and live-coding sessions.
-Each assignment/live-coding session is maintained in its dedicated Git branch.
+This branch contains clean, fully-tested Java implementations for the Day 2 Live-Coding Session problems:
 
-## Branch Overview
+1. **Vowel & Consonant Counter (`VowelConsonantCounter.java`)**
+   - Method: `void countVowelsAndConsonants(String text)`
+   - Iterates through characters using `charAt()`, classifying letters into vowels and consonants while ignoring spaces.
 
-| Branch | Description | Problems Covered |
-| :--- | :--- | :--- |
-| **`day-1-live-coding`** | Day 1 Live-Coding Session | Rock-Paper-Scissors, Palindrome Checker, BMI Calculator, First Non-Repeating Character, Reverse Customer Name |
-| **`week-1-assignment`** | Week 1 Assignment | Exam Hall Seat Duplication, Typing Speed Accuracy, Traffic Signal Streak, Warehouse Inventory Balancer, Movie Review Word Length Profiler |
-| **`day-2-live-coding`** | Day 2 Live-Coding Session | Vowel & Consonant Counter, CSV Student Record Parser, File Extension Validator, Masked Phone Number Formatter, Bank Transaction Reference Generator & Validator |
-| **`week-2-assignment`** | Week 2 Assignment | ATM PIN Validator, Word Reversal Encoder, Product Inventory CSV Parser, Library ISBN Normalizer & Validator, Stop-Word-Filtered Frequency Report |
-| **`week-3-category-a`** | Week 3 OOP Homework (Category A) | Library Fine System, Extending Employee Without Touching It, Object References & Null Safety, Instance vs Static Boundary, Capstone HR + Parking Mini-System |
+2. **CSV Student Record Parser (`CsvStudentRecordParser.java`)**
+   - Method: `void parseStudentRecord(String csvLine)`
+   - Parses CSV string using `split(",")`, validates the field count, and formats student data.
 
----
-## Requirements
-- Java Development Kit (JDK 17 or higher)
+3. **File Extension Validator (`FileExtensionValidator.java`)**
+   - Method: `String validateFileExtension(String filename)`
+   - Extracts file extension using `lastIndexOf('.')` and `substring()`, matching against allowed extensions case-insensitively.
+
+4. **Masked Phone Number Formatter (`MaskedPhoneNumberFormatter.java`)**
+   - Method: `String maskPhoneNumber(String phone)`
+   - Validates 10-digit numeric phone numbers and formats them using `StringBuilder` into `XXXXXX-####`.
+
+5. **Bank Transaction Reference Generator & Validator (`BankReferenceValidator.java`)**
+   - Methods:
+     - `String normalizeReference(String raw)`
+     - `String validateAndFormat(String reference)`
+   - Trims and normalizes bank codes, validates format without regex using `Character.isLetter()` and `Character.isDigit()`, and formats into `[BANKCODE] DATE: dd/MM/yy | SEQ: 12345`.
+
+## Compilation & Execution
+```bash
+javac src/*.java
+java -cp src VowelConsonantCounter
+java -cp src CsvStudentRecordParser
+java -cp src FileExtensionValidator
+java -cp src MaskedPhoneNumberFormatter
+java -cp src BankReferenceValidator
+```
