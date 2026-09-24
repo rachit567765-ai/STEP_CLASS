@@ -1,18 +1,33 @@
-﻿# STEP_CLASS
+# Week 3 OOP Homework Assignment — Category A Problems
 
-This repository contains solutions for the **STEP SEM-3** assignments and live-coding sessions.
-Each assignment/live-coding session is maintained in its dedicated Git branch.
+This branch contains clean, fully-tested Java implementations for the Week 3 Object-Oriented Programming problems:
 
-## Branch Overview
+1. **Library Fine System (`LibraryFineSystem.java`)**
+   - Class: `BookIssue`
+   - Demonstrates distinction between instance methods (`fineAmount()`, `isSeverelyOverdue()`) and static aggregation utilities (`totalFineCollected()`).
 
-| Branch | Description | Problems Covered |
-| :--- | :--- | :--- |
-| **`day-1-live-coding`** | Day 1 Live-Coding Session | Rock-Paper-Scissors, Palindrome Checker, BMI Calculator, First Non-Repeating Character, Reverse Customer Name |
-| **`week-1-assignment`** | Week 1 Assignment | Exam Hall Seat Duplication, Typing Speed Accuracy, Traffic Signal Streak, Warehouse Inventory Balancer, Movie Review Word Length Profiler |
-| **`day-2-live-coding`** | Day 2 Live-Coding Session | Vowel & Consonant Counter, CSV Student Record Parser, File Extension Validator, Masked Phone Number Formatter, Bank Transaction Reference Generator & Validator |
-| **`week-2-assignment`** | Week 2 Assignment | ATM PIN Validator, Word Reversal Encoder, Product Inventory CSV Parser, Library ISBN Normalizer & Validator, Stop-Word-Filtered Frequency Report |
-| **`week-3-category-a`** | Week 3 OOP Homework (Category A) | Library Fine System, Extending Employee Without Touching It, Object References & Null Safety, Instance vs Static Boundary, Capstone HR + Parking Mini-System |
+2. **Extending Employee Without Touching It (`EmployeeExtension.java`)**
+   - Classes: `Employee`, `ManagerEmployee`, `InternEmployee`
+   - Implements inheritance, method extension, salary capping, and polymorphic runtime dispatch with `instanceof`.
 
----
-## Requirements
-- Java Development Kit (JDK 17 or higher)
+3. **Object References & Null Safety (`ParkingSlotAllocation.java`)**
+   - Class: `ParkingSlot`
+   - Demonstrates pass-by-reference mutation semantics in Java and guaranteed null-safe slot searching and allocation.
+
+4. **Designing the Instance/Static Boundary (`LibraryMembershipSystem.java`)**
+   - Class: `LibraryMember`
+   - Explains the architectural bugs resulting from premature static field usage and contrasts with a correctly encapsulated instance design with auto-generated IDs.
+
+5. **Capstone HR + Parking Allocation Mini-System (`CompanyHRMiniSystem.java`)**
+   - Class: `CompanyEmployeeRecord`
+   - Integrates composition, inheritance, static counters, and null safety into a unified enterprise domain model.
+
+## Compilation & Execution
+```bash
+javac src/*.java
+java -cp src LibraryFineSystem
+java -cp src EmployeeExtension
+java -cp src ParkingSlotAllocation
+java -cp src LibraryMembershipSystem
+java -cp src CompanyHRMiniSystem
+```
