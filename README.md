@@ -1,17 +1,22 @@
-﻿# STEP_CLASS
+# STEP_CLASS
 
-This repository contains solutions for the **STEP SEM-3** assignments and live-coding sessions.
-Each assignment/live-coding session is maintained in its dedicated Git branch.
+This repository contains clean, verified Java solutions for the **STEP SEM-3** assignments and practice sets.
+Every branch corresponds to an exact PDF document, containing a single `Solution.java` with the question statement placed directly above the code for each problem.
 
-## Branch Overview
+## Branch Overview (Named after PDF Files)
 
-| Branch | Description | Problems Covered |
+| Branch Name | Original PDF File Name | Topic / Description |
 | :--- | :--- | :--- |
-| **`day-1-live-coding`** | Day 1 Live-Coding Session | Rock-Paper-Scissors, Palindrome Checker, BMI Calculator, First Non-Repeating Character, Reverse Customer Name |
-| **`week-1-assignment`** | Week 1 Assignment | Exam Hall Seat Duplication, Typing Speed Accuracy, Traffic Signal Streak, Warehouse Inventory Balancer, Movie Review Word Length Profiler |
-| **`day-2-live-coding`** | Day 2 Live-Coding Session | Vowel & Consonant Counter, CSV Student Record Parser, File Extension Validator, Masked Phone Number Formatter, Bank Transaction Reference Generator & Validator |
-| **`week-2-assignment`** | Week 2 Assignment | ATM PIN Validator, Word Reversal Encoder, Product Inventory CSV Parser, Library ISBN Normalizer & Validator, Stop-Word-Filtered Frequency Report |
-| **`week-3-category-a`** | Week 3 OOP Homework (Category A) | Library Fine System, Extending Employee Without Touching It, Object References & Null Safety, Instance vs Static Boundary, Capstone HR + Parking Mini-System |
+| **`STEP-SEM-3_Week_1_Problems`** | `STEP-SEM-3 Week 1 Problems.pdf` | Day 1 Live-Coding Session — 5 Problems |
+| **`STEP=SEM-3_Week_1_Problems_Assignment`** | `STEP=SEM-3 Week 1_Problems_Assignment.pdf` | Week 1 Assignment — 5 Problems |
+| **`STEP-SEM3-Week2-Practice_Problems`** | `STEP-SEM3-Week2-Practice Problems.pdf` | Day 2 Live-Coding Session — 5 Problems |
+| **`STEP-SEM3-Week2-Assignment_Problems`** | `STEP-SEM3-Week2-Assignment Problems.pdf` | Week 2 Assignment — 5 Problems |
+| **`OOP_Week3_Category_A_Assignment`** | `OOP_Week3_Category_A_Assignment.pdf` | Week 3 OOP Homework Assignment — Category A |
+| **`OOP_Week3_Category_A_Problems_old`** | `OOP_Week3_Category_A_Problems_old.pdf` | Week 3 OOP Practice Problems — Category A |
+| **`OOP_STEP-SEM-3_Week_4_Category_A_Practice_Problem`** | `OOP_STEP-SEM-3_Week_4_Category_A_Practice_Problem.pdf` | Week 4 Constructors & Keywords Practice (Mentor) |
+| **`STEP-SEM-3_Week_4_Category_A_Assignment_Problems`** | `STEP-SEM-3_Week_4_Category_A_Assignment_Problems.pdf` | Week 4 Constructors & Keywords Assignment |
+| **`STEP-SEM-3_Week_5_AccessModifiers_Encapsulation_Category_A_Practice_Problems`** | `STEP-SEM-3_Week_5_AccessModifiers_Encapsulation_Category_A_Practice_Problems.pdf` | Week 5 Access Modifiers & Encapsulation Practice (Mentor) |
+| **`STEP-SEM-3_Week_5_AccessModifiers_Encapsulation_Category_A_Assignment_Problems`** | `STEP-SEM-3_Week_5_AccessModifiers_Encapsulation_Category_A_Assignment_Problems.pdf` | Week 5 Access Modifiers & Encapsulation Assignment |
 
 ---
 ## Requirements
